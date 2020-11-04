@@ -54,7 +54,7 @@ export class TouchablePreview extends React.PureComponent<Props> {
 
   static peeking = false;
 
-  private timeout: number | undefined;
+  private timeout: any | undefined;
   private touchStartedAt: number = 0;
   private onRef = React.createRef<any>();
   onPress = () => {

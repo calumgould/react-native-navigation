@@ -50,7 +50,11 @@ const Footer: React.FC<FooterProps> = ({ componentId, footer }) => {
       )}
 
       {/* Rendering Footer. */}
-      {footer && <Text style={styles.footerText}>{footer}</Text>}
+      {footer && (
+        <View testID="footer">
+          <Text style={styles.footerText}>{footer}</Text>
+        </View>
+      )}
 
       {/* Rendering component id. */}
       <Text style={styles.footerText}>{`this.props.componentId = ${componentId}`}</Text>

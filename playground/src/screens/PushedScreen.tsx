@@ -49,9 +49,6 @@ export default class PushedScreen extends NavigationComponent<Props> {
             testID: TOP_BAR_BTN,
           },
         ],
-        backButton: {
-          testID: BACK_BUTTON,
-        },
       },
     };
   }

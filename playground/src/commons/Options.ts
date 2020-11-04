@@ -21,6 +21,14 @@ const setDefaultOptions = () =>
       componentBackgroundColor: Colors.background,
       orientation: ['portrait'],
     },
+    topBar: {
+      backButton: {
+        icon: require('../../img/arrowBack.png'),
+        color: 'black',
+        showTitle: false,
+        testID: 'navigation-back',
+      },
+    },
     bottomTabs: {
       titleDisplayMode: 'alwaysShow',
     },
