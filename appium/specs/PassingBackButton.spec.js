@@ -14,6 +14,7 @@ describe('passing back button', () => {
     await pushButton.click();
     await browser.pause(1000);
     // Now on 'Pushed 2'
+    // Stack position is 2
     const backButton = await $('~Pushed Screen');
     await backButton.click();
     // Should now be back on 'Pushed Screen'
