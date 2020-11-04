@@ -1,9 +1,6 @@
 const { config } = require('./wdio.shared.conf');
 const { join } = require('path');
 
-// ============
-// Specs
-// ============
 config.specs = ['./appium/specs/*.spec.js'];
 
 config.capabilities = [
